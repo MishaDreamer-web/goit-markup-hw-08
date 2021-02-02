@@ -1,0 +1,46 @@
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients__tittle {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  font-weight: $font-weight-bold;
+  font-size: $font-size-tittle;
+  line-height: $line-height-secondary;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $txt-main-color;
+}
+
+.clients-list {
+  display: flex;
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.clients-list__link {
+  width: 170px;
+  height: 90px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid $clients-logo-border-color;
+  border-radius: 4px;
+  fill: $social-link-color;
+
+  transition: border-color $time-transition $function-bezire,
+    fill $time-transition $function-bezire;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+    border-color: $accent-color;
+  }
+}
