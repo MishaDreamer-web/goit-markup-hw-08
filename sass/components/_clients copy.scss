@@ -1,14 +1,14 @@
 .clients {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .clients__tittle {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 
   font-weight: $font-weight-bold;
-  font-size: 28px;
+  font-size: $font-size-tittle;
   line-height: $line-height-secondary;
   text-align: center;
   letter-spacing: 0.03em;
@@ -17,25 +17,19 @@
 
 .clients-list {
   display: flex;
-  flex-wrap: wrap;
 
-  &__item:nth-child(2n + 1) {
+  &__item:not(:last-child) {
     margin-right: 30px;
-  }
-
-  &__item:nth-child(-n + 4) {
-    margin-bottom: 30px;
   }
 }
 
 .clients-list__link {
-  width: 210px;
+  width: 170px;
   height: 90px;
 
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
 
   border: 1px solid $clients-logo-border-color;
   border-radius: 4px;

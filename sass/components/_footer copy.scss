@@ -2,19 +2,22 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  text-align: center;
-
   background-color: $footer-bg-color;
 }
 
-.footer-prepend__logo {
-  margin: 0;
-  margin-bottom: 20px;
-  display: block;
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
 
-  font-size: 24px;
-  line-height: 28px;
-  letter-spacing: 0.03em;
+.footer-prepend {
+  margin-right: 70px;
+}
+
+.footer-prepend__logo {
+  display: block;
+  margin-right: 0;
+  margin-bottom: 20px;
 
   &--inverse {
     color: $txt-white-color;
@@ -22,7 +25,7 @@
 }
 
 address {
-  margin-bottom: 8px;
+  margin-bottom: 9px;
 
   font-style: normal;
   font-size: $font-size-basic;
@@ -34,15 +37,16 @@ address {
 
 .footer-contacts {
   display: inline-block;
-  margin-bottom: 60px;
 
   &__item:not(:last-child) {
-    margin-bottom: 8px;
+    margin-bottom: 9px;
   }
 }
 
 .footer-contacts__link {
   padding: 0;
+  display: flex;
+  align-items: center;
 
   font-weight: $font-weight-normal;
   font-size: $font-size-basic;
@@ -59,6 +63,12 @@ address {
 }
 
 .footer-social {
+  width: 206px;
+  height: 80px;
+
+  display: flex;
+  flex-direction: column;
+
   &__item:not(:last-child) {
     margin-right: 10px;
   }
@@ -77,10 +87,7 @@ address {
 }
 
 .footer-social__list {
-  margin-bottom: 60px;
-
   display: flex;
-  justify-content: center;
 }
 
 .footer-social__link {
@@ -93,8 +100,12 @@ address {
   }
 }
 
+.footer-append {
+  margin-left: auto;
+}
+
 .subscribe-form {
-  width: 450px;
+  width: 570px;
 }
 
 .footer-slogan {
@@ -110,10 +121,10 @@ address {
 }
 
 .subscribe__text {
-  width: 450px;
+  width: 358px;
 
+  margin-right: 12px;
   padding: 15px 16px;
-  margin-bottom: 20px;
 
   border: 1px solid $subscribe-text-border-color;
   border-radius: 4px;
@@ -122,8 +133,8 @@ address {
 
   &::placeholder {
     font-weight: $font-weight-normal;
-    font-size: $font-size-secondary;
-    line-height: 1.25;
+    font-size: 16px;
+    line-height: 0, 8;
     letter-spacing: 0.03em;
 
     color: rgba(255, 255, 255, 0.6);
