@@ -18,6 +18,11 @@
 .clients-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+
+  &__item {
+    flex-basis: calc(100% / 2 - 15px);
+  }
 
   &__item:nth-child(2n + 1) {
     margin-right: 30px;
@@ -29,7 +34,7 @@
 }
 
 .clients-list__link {
-  width: 210px;
+  // width: 210px;
   height: 90px;
 
   display: flex;

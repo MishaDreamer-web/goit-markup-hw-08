@@ -601,7 +601,7 @@ img {
 .about-us__item {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 450px;
+  max-width: 450px;
 }
 
 .about-us__item:not(:last-child) {
@@ -609,7 +609,7 @@ img {
 }
 
 .advantages__card {
-  width: 450px;
+  max-width: 450px;
   height: 120px;
   margin-bottom: 30px;
   display: -webkit-box;
@@ -724,6 +724,7 @@ img {
 
 .teammate-card__image {
   margin-bottom: 30px;
+  width: 100%;
 }
 
 .teammate-card__person {
@@ -748,8 +749,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 122px;
-  padding-right: 122px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .team-social__item:not(:last-child) {
@@ -801,6 +803,14 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.clients-list__item {
+  -ms-flex-preferred-size: calc(100% / 2 - 15px);
+      flex-basis: calc(100% / 2 - 15px);
 }
 
 .clients-list__item:nth-child(2n + 1) {
@@ -812,7 +822,6 @@ img {
 }
 
 .clients-list__link {
-  width: 210px;
   height: 90px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -925,7 +934,7 @@ address {
 }
 
 .subscribe-form {
-  width: 450px;
+  max-width: 450px;
 }
 
 .footer-slogan {
@@ -940,7 +949,7 @@ address {
 }
 
 .subscribe__text {
-  width: 450px;
+  width: 100%;
   padding: 15px 16px;
   margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
