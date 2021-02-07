@@ -7,6 +7,8 @@
 
   background: rgba(0, 0, 0, 0.2);
 
+  overflow-y: scroll;
+
   opacity: 1;
   transition: opacity $time-transition $function-bezire;
 }
