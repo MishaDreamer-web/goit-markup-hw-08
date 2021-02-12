@@ -111,6 +111,7 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
+  &:hover,
   &:focus {
     border-color: $accent-color;
   }
@@ -130,6 +131,7 @@
   transform: translateY(-50%);
 }
 
+.field-form input:hover + .icon-modal,
 .field-form input:focus + .icon-modal {
   fill: $accent-color;
 }
@@ -154,6 +156,7 @@ textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
+  &:hover,
   &:focus {
     border-color: $accent-color;
   }
