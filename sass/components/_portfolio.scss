@@ -2,7 +2,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -11,12 +11,18 @@
 .examples-cards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .examples-cards__card {
   margin-bottom: 30px;
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 354px;
+    flex-basis: calc(100% / 2 - 15px);
   }
 
   @media screen and (min-width: 1200px) {
@@ -49,6 +55,10 @@
   position: relative;
 
   overflow: hidden;
+}
+
+.examples-thumb__image {
+  width: 100%;
 }
 
 .card-overlay {

@@ -764,6 +764,9 @@ img {
 .hero__button {
   width: 200px;
   height: 50px;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
   background-color: #2196f3;
   color: #ffffff;
 }
@@ -1351,6 +1354,9 @@ address {
 @media screen and (min-width: 768px) {
   .portfolio-buttons {
     margin-bottom: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1396,7 +1402,7 @@ address {
   padding-bottom: 60px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .examples {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -1409,6 +1415,9 @@ address {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .examples-cards__card {
@@ -1417,6 +1426,14 @@ address {
 
 .examples-cards__card:last-child {
   margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .examples-cards__card {
+    max-width: 354px;
+    -ms-flex-preferred-size: calc(100% / 2 - 15px);
+        flex-basis: calc(100% / 2 - 15px);
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1446,6 +1463,10 @@ address {
 .examples-thumb {
   position: relative;
   overflow: hidden;
+}
+
+.examples-thumb__image {
+  width: 100%;
 }
 
 .card-overlay {
