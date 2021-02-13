@@ -20,6 +20,10 @@
   }
 }
 
+.header-container {
+  position: relative;
+}
+
 //Navigation
 .main-nav {
   display: flex;
@@ -63,8 +67,13 @@
 }
 
 .menu-container {
+  justify-content: space-between;
+
   @media screen and (max-width: 767px) {
     display: none;
+
+    flex-direction: column;
+
     position: absolute;
     top: 0;
     left: 0;
@@ -80,7 +89,7 @@
     z-index: 1;
 
     &.is-open {
-      display: block;
+      display: flex;
     }
   }
 
@@ -95,10 +104,6 @@
 }
 
 .site-nav {
-  @media screen and (max-width: 767px) {
-    margin-bottom: 302px;
-  }
-
   @media screen and (min-width: 768px) {
     display: flex;
     margin-right: 84px;
@@ -173,7 +178,6 @@
 //Contacts
 .contacts-nav {
   padding: 0;
-  margin-left: auto;
 
   &__item {
     margin-right: 30px;
@@ -246,6 +250,8 @@
   }
 
   @media screen and (min-width: 768px) {
+    margin-left: auto;
+
     &__icon-mail,
     &__icon-smartphone {
       display: block;
