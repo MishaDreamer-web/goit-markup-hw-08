@@ -180,7 +180,6 @@ textarea {
 .policy-check {
   position: relative;
 
-  margin-right: 11px;
   margin-bottom: 30px;
 
   font-weight: $font-weight-normal;
@@ -189,6 +188,10 @@ textarea {
   letter-spacing: 0.03em;
 
   color: $txt-second-color;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 11px;
+  }
 }
 
 .policy-label {

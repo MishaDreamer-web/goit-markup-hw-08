@@ -1881,13 +1881,18 @@ textarea::placeholder {
 
 .policy-check {
   position: relative;
-  margin-right: 11px;
   margin-bottom: 30px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+@media screen and (min-width: 768px) {
+  .policy-check {
+    margin-right: 11px;
+  }
 }
 
 .policy-label {
