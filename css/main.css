@@ -913,8 +913,13 @@ img {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 767px) {
+  .advantages__tittle {
+    text-align: center;
+  }
 }
 
 .advantages__text {
@@ -1244,12 +1249,6 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .footer-container {
-    text-align: -moz-center;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .footer-container {
     display: -webkit-box;
@@ -1383,6 +1382,12 @@ address {
 
 .subscribe-form {
   max-width: 450px;
+}
+
+@media screen and (max-width: 1199px) {
+  .subscribe-form {
+    margin: 0 auto;
+  }
 }
 
 @media screen and (min-width: 1200px) {

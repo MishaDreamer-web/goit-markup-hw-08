@@ -16,10 +16,6 @@
     align-items: center;
   }
 
-  @media screen and (min-width: 768px) {
-    text-align: -moz-center;
-  }
-
   @media screen and (min-width: 1200px) {
     display: flex;
 
@@ -143,6 +139,10 @@ address {
 
 .subscribe-form {
   max-width: 450px;
+
+  @media screen and (max-width: 1199px) {
+    margin: 0 auto;
+  }
 
   @media screen and (min-width: 1200px) {
     max-width: 570px;
